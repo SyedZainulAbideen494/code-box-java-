@@ -1,31 +1,52 @@
 const program4 = {
   id: 4,
-  title: "Program 4 - Display Array Elements with Indexes",
+  title: "Program 4 - Matrix Addition and Subtraction (C)",
   lang: "c",
   code: `#include <stdio.h>
 
-int main() {
-    int n;
-    int arr[20];
+int main()
+{
+    int i, j, r, c;
+    int A[10][10], B[10][10], S[10][10], D[10][10];
 
-    printf("Enter the size of the array: ");
-    scanf("%d", &n);
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &r, &c);
 
-    // Read array elements
-    printf("Enter %d elements:\\n", n);
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    printf("Enter Matrix A:\\n");
+    for (i = 0; i < r; i++)
+        for (j = 0; j < c; j++)
+            scanf("%d", &A[i][j]);
+
+    printf("Enter Matrix B:\\n");
+    for (i = 0; i < r; i++)
+        for (j = 0; j < c; j++)
+            scanf("%d", &B[i][j]);
+
+    for (i = 0; i < r; i++)
+        for (j = 0; j < c; j++)
+        {
+            S[i][j] = A[i][j] + B[i][j];
+            D[i][j] = A[i][j] - B[i][j];
+        }
+
+    printf("Addition:\\n");
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+            printf("%d ", S[i][j]);
+        printf("\\n");
     }
 
-    // Display elements with index
-    printf("\\nArray elements with their indexes:\\n");
-    for(int i = 0; i < n; i++) {
-        printf("Index %d -> %d\\n", i, arr[i]);
+    printf("Subtraction:\\n");
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+            printf("%d ", D[i][j]);
+        printf("\\n");
     }
 
     return 0;
-}
-`
+}`
 };
 
 export default program4;
