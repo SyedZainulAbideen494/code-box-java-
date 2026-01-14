@@ -276,7 +276,7 @@ export default function Dashboard() {
         <Hero ref={heroRef}>
           <div className="blob b1" aria-hidden />
           <div className="blob b2" aria-hidden />
-          <h1>Java Programs</h1>
+          <h1>DS Programs</h1>
           <p></p>
         </Hero>
 
