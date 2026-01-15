@@ -11,9 +11,10 @@ import program3 from "../programs/program3";
 import program4 from "../programs/program4";
 import program5 from "../programs/program5";
 import program6 from "../programs/program6";
+import program7 from "../programs/program7";
 
 /* ---------------- Registry ---------------- */
-const allPrograms = { 1: program1, 2: program2, 3: program3, 4: program4};
+const allPrograms = { 1: program1, 2: program2, 3: program3, 4: program4,5:program5, 6: program6, 7: program7};
 const idsList = Object.keys(allPrograms).map(n => +n).sort((a,b)=>a-b);
 
 /* ---------------- Animations ---------------- */

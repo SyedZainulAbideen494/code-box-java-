@@ -7,8 +7,9 @@ import program3 from "../programs/program3";
 import program4 from "../programs/program4";
 import program5 from "../programs/program5";
 import program6 from "../programs/program6";
+import program7 from "../programs/program7";
 
-const programs = [program1, program2, program3, program4];
+const programs = [program1, program2, program3, program4, program5, program6, program7];
 
 /* ---------------- Global ---------------- */
 const Global = createGlobalStyle`
