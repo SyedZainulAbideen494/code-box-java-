@@ -287,7 +287,7 @@ export default function Dashboard() {
               <Title>{p.title}</Title>
               <Meta>
                 <span className="pill">#{p.id}</span>
-                <span className="pill">Java</span>
+                <span className="pill">DS</span>
               </Meta>
             </Card>
           ))}
